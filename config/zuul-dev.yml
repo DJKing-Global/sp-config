@@ -5,10 +5,10 @@ spring:
     config:
       override-none: true
   rabbitmq:
-      host: 192.168.64.140
-      port: 5672
-      username: admin
-      password: admin    
+    host: 192.168.64.140
+    port: 5672
+    username: admin
+    password: admin    
 server:
   port: 3001
   
@@ -19,6 +19,7 @@ eureka:
 
 zuul:
   retryable: true
+#默认转发规则
 #  routes:
 #    item-service: /item-service/**
 #    user-service: /user-service/**
